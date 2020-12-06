@@ -23,7 +23,54 @@ Either way, during first access openHAB asks which UIs should be installed. Sele
 
 ## Presentation
 
-tbd
+### Smart Home
+*Home automation or domotics is building automation for a home, called a smart home or smart house. A home automation system will monitor and/or control home attributes such as lighting, climate, entertainment systems, and appliances. It may also include home security such as access control and alarm systems.* (Wikipedia)
+
+### Common problems with smart stuff
+- Lots of proprietary software / mobile applications
+- Usually no (public) API
+- Often dependent to internet connection
+- rules across (eco)systems?
+
+[![Standards](https://imgs.xkcd.com/comics/standards.png)](https://xkcd.com/927/)
+
+### Smart Home systems
+
+#### Homekit
+
+Pros:
+- Requires certification from Apple, you can expect this to work
+- Does not require additional hardware
+- Offers (rudi🍻mentary) rule engine
+
+Cons:
+- Certification will increase price
+- Limited to "what Apple allows"
+
+#### Vendor (Hue, Homematic, ...)
+
+Pros:
+- Hardware usually "just works"
+- As a paid product, you can expect this to be tested
+- Limited to vendors components
+
+Cons:
+- Blocking of non-approved hardware, even if the same (wireless) standard is used
+- May be restricted with updates
+- May stop working if vendor's cloud dies (for whatever reason)
+
+#### Self Hosted Software (ioBroker, openHAB, ...)
+
+Pros:
+- Almost no limitation (especially because open source software)
+- Marries different systems
+- Rules can be created across systems/vendors
+
+Cons:
+- Requires own hardware
+- Setup and learning can be time-consuming (in theory 😉)
+- Sometimes working on reverse-engineered/unofficial APIs
+- Might be blocked from systems if (non-official) APIs are used without approval
 
 ## openHAB hands-on
 
