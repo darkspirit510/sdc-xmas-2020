@@ -72,6 +72,27 @@ Cons:
 - Sometimes working on reverse-engineered/unofficial APIs
 - Might be blocked from systems if (non-official) APIs are used without approval
 
+### openHAB
+
+
+
+
+#### Binding
+
+*Library* to connect openHAB with something external. Although there are bindings for generic stuff like HTTP, MQTT or even XMPP, more specific bindings exists for the outside world. Those bindings handle authentications, refreshs, transformations and other technical problems. Most of them can act bidirectional and even support auto detection of new things.
+
+#### Thing
+
+A thing is openHAB's representation of an external entity. This can be physical (a smart bulb, television, smartphone, gas station, ...) or something theoretical (network device, clock, weather provider). Things are used to group and identify external information via channels.
+
+#### Channel
+
+Something readable from or writeable to a thing. Has a type (which also brings transformation/extraction from thing) and can be transfered to openHAB.
+
+#### Item
+
+Compareable to a global variable in any programming language. Can (but does not have to) be linked to a channel of a thing. If linked to a channel, updates gathered through from a binding will be written to the item and updates to the item will be published via the binding.
+
 ## openHAB hands-on
 
 tbd
