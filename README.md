@@ -74,16 +74,19 @@ Cons:
 
 ### openHAB
 
-
-
+One of the most used smart home systems. It's open source with a lot of developers and a helpful community. The important wordings for this workshop are as follows.
 
 #### Binding
 
-*Library* to connect openHAB with something external. Although there are bindings for generic stuff like HTTP, MQTT or even XMPP, more specific bindings exists for the outside world. Those bindings handle authentications, refreshs, transformations and other technical problems. Most of them can act bidirectional and even support auto detection of new things.
+*Library* to connect openHAB with something external. Although there are bindings for generic stuff like HTTP, MQTT or even XMPP, more specific bindings exists for the outside world. Those bindings handle protocols, authentications, refreshs, transformations and other technical problems. Most of them can act bidirectional and even support auto detection of new things.
 
 #### Thing
 
 A thing is openHAB's representation of an external entity. This can be physical (a smart bulb, television, smartphone, gas station, ...) or something theoretical (network device, clock, weather provider). Things are used to group and identify external information via channels.
+
+#### Bridge
+
+Bridges are a special type of things. Some bindings require defining a(t least one) bridge and add things belonging to that bridge as children. This tells the binding where to request things. They also allow you adding multiple bridges (since most of them have physical limitations of devices) and distinguish between different bridges.
 
 #### Channel
 
